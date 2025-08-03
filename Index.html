@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizador de Necessaire - Protótipo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Personalize sua Necessaire Masculina</h1>
+        <p>Escolha os detalhes e veja o resultado em tempo real.</p>
+    </header>
+
+    <main>
+        <div class="customizer-container">
+            <!-- Coluna do Visualizador do Produto -->
+            <div class="product-viewer">
+                <h3>Visualização Externa</h3>
+                <div class="image-container">
+                    <!-- Camadas da parte externa -->
+                    <img id="necessaire-base" src="https://i.imgur.com/8aV5a60.png" alt="Base da necessaire">
+                    <img id="necessaire-tecido" class="color-layer" src="https://i.imgur.com/uP4n2Fh.png" alt="Tecido da necessaire">
+                    <img id="necessaire-ziper" class="color-layer" src="https://i.imgur.com/hO9a2zX.png" alt="Zíper da necessaire">
+                    <img id="necessaire-vivo" class="color-layer" src="https://i.imgur.com/ZkYtL5I.png" alt="Vivo da necessaire">
+                    <img id="necessaire-cantos" class="color-layer" src="https://i.imgur.com/vL96nJz.png" alt="Cantos da necessaire">
+                    <img id="necessaire-cursores" class="color-layer" src="https://i.imgur.com/sM9LgE0.png" alt="Cursores da necessaire">
+                </div>
+                <h3>Visualização Interna</h3>
+                <div class="image-container-small">
+                     <img id="necessaire-forro" src="https://i.imgur.com/5wzS2aM.png" alt="Forro interno">
+                </div>
+            </div>
+
+            <!-- Coluna das Opções de Personalização -->
+            <div class="options-panel">
+                <div class="price-display">
+                    Preço Final: <strong>R$ 49,90</strong>
+                </div>
+
+                <div class="option-group">
+                    <label>1. Tecido Principal</label>
+                    <div class="choice-buttons">
+                        <button class="choice-btn" data-part="tecido" data-choice="claro">Claro</button>
+                        <button class="choice-btn" data-part="tecido" data-choice="escuro">Escuro</button>
+                    </div>
+                </div>
+                
+                <div class="option-group">
+                    <label>2. Forro Interno</label>
+                    <div class="choice-buttons">
+                        <button class="choice-btn" data-part="forro" data-choice="claro">Claro</button>
+                        <button class="choice-btn" data-part="forro" data-choice="escuro">Escuro</button>
+                    </div>
+                </div>
+
+                <div class="option-group">
+                    <label>3. Zíper</label>
+                    <div class="choice-buttons">
+                        <button class="choice-btn" data-part="ziper" data-choice="claro">Claro</button>
+                        <button class="choice-btn" data-part="ziper" data-choice="escuro">Escuro</button>
+                    </div>
+                </div>
+
+                <div class="option-group">
+                    <label>4. Vivo (Contorno)</label>
+                    <div class="choice-buttons">
+                        <button class="choice-btn" data-part="vivo" data-choice="claro">Claro</button>
+                        <button class="choice-btn" data-part="vivo" data-choice="escuro">Escuro</button>
+                    </div>
+                </div>
+
+                <div class="option-group">
+                    <label>5. Acabamento dos Cantos</label>
+                    <div class="choice-buttons">
+                        <button class="choice-btn" data-part="cantos" data-choice="claro">Claro</button>
+                        <button class="choice-btn" data-part="cantos" data-choice="escuro">Escuro</button>
+                    </div>
+                </div>
+
+                <div class="option-group">
+                    <label>6. Cursores (Puxadores)</label>
+                    <div class="choice-buttons">
+                        <button class="choice-btn" data-part="cursores" data-choice="claro">Claro</button>
+                        <button class="choice-btn" data-part="cursores" data-choice="escuro">Escuro</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Protótipo criado para demonstração.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
