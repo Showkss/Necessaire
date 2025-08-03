@@ -1,0 +1,135 @@
+/* Estilos Gerais */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+    color: #212529;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Container Principal */
+.customizer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    max-width: 1100px;
+    width: 100%;
+}
+
+/* Visualizador do Produto */
+.product-viewer {
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.product-viewer h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #6c757d;
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 0.5rem;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    padding-top: 75%; /* Proporção 4:3 */
+}
+
+.image-container-small {
+    position: relative;
+    width: 50%;
+    padding-top: 37.5%; /* Metade da proporção */
+    margin: 0 auto;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+}
+
+.image-container img, .image-container-small img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Painel de Opções */
+.options-panel {
+    flex: 1;
+    min-width: 320px;
+}
+
+.price-display {
+    background-color: #e9f5ff;
+    border: 1px solid #b3d7ff;
+    color: #004085;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.option-group {
+    margin-bottom: 1.5rem;
+}
+
+.option-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.choice-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.choice-btn {
+    flex: 1;
+    padding: 0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid #ced4da;
+    background-color: #f8f9fa;
+    color: #495057;
+    border-radius: 6px;
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.choice-btn:hover {
+    background-color: #e9ecef;
+}
+
+.choice-btn.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+    font-weight: bold;
+}
